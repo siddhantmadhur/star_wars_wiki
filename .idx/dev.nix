@@ -4,9 +4,10 @@
     pkgs.jdk17
     pkgs.unzip
   ];
-  idx.extensions = [
-    
-  ];
+  idx.extensions = [  
+ "Dart-Code.dart-code"
+ "Dart-Code.flutter"
+ ];
   idx.previews = {
     previews = {
       web = {
