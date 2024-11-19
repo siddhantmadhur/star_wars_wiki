@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:star_wars_wiki/main.dart';
+import 'package:star_wars_wiki/wiki.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
