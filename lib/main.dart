@@ -19,7 +19,33 @@ class MainApp extends StatelessWidget {
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: Text("Flutter Workshop"),
         ),
-        body: Text("Hello, World"),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: TextButton(
+              onPressed: () {
+                print("Button being pressed!!");
+              },
+              child: Text("Interact!!!"),
+              style: ButtonStyle(
+                backgroundColor: WidgetStateProperty.all(
+                  Theme.of(context).colorScheme.primary,
+                ),
+                foregroundColor: WidgetStateProperty.all(
+                  Theme.of(context).colorScheme.inversePrimary,
+                ),
+                shape: WidgetStateProperty.all(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                ),
+                minimumSize: WidgetStateProperty.all(
+                  const Size.fromHeight(12),
+                ),
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }
