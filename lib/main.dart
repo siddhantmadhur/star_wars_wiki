@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:star_wars_wiki/results.dart';
+import 'package:star_wars_wiki/star_wars.dart';
+
 
 void main() {
   runApp(MainApp());
